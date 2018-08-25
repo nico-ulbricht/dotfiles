@@ -14,6 +14,8 @@ brew 'yarn'
 brew 'zsh'
 
 cask 'bettertouchtool'
+cask 'boostnote'
+cask 'docker'
 cask 'enpass'
 cask 'google-chrome'
 cask 'google-cloud-sdk'
