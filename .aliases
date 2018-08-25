@@ -1,0 +1,26 @@
+# navigation
+alias .. = "cd .."
+alias ... = "cd ../.."
+alias .... = "cd ../../.."
+alias ..... = "cd ../../../.."
+
+# tooling
+alias cp = "cp -v"
+alias mv = "mv -v"
+alias rm = "rm -v"
+alias where = "which"
+
+# git
+alias g = "git"
+alias master = "git checkout master"
+
+# k8s  
+alias kc = "kubectl"
+alias kcd = "kubectl delete"
+alias kcdd = "kubectl delete deploy"
+alias kcdp = "kubectl delete pods"
+alias kcds = "kubectl delete svc"
+alias kcg = "kubectl get"
+alias kcgd = "kubectl get deploy"
+alias kcgp = "kubectl get pods"
+alias kcgs = "kubectl get svc"
