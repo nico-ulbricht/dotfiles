@@ -16,6 +16,7 @@ brew 'yarn'
 brew 'zsh'
 
 cask '1password'
+cask 'airmail-beta'
 cask 'bettertouchtool'
 cask 'boostnote'
 cask 'docker'
