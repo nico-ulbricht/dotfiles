@@ -1,7 +1,7 @@
 # Dotfiles
 ## Installation
 
-```
+```sh
 brew bundle
 ln -s .aliases ~/
 ln -s .functions ~/
