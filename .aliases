@@ -24,3 +24,11 @@ alias kcg="kubectl get"
 alias kcgd="kubectl get deploy"
 alias kcgp="kubectl get pods"
 alias kcgs="kubectl get svc"
+
+# yarn
+alias y="yarn"
+alias yb="yarn build"
+alias ybw="yarn build:watch"
+alias ys="yarn start"
+alias yt="yarn test"
+alias ytw="yarn test:watch"
