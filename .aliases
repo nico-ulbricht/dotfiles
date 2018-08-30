@@ -29,6 +29,8 @@ alias kcgd="kubectl get deploy"
 alias kcgn="kubectl get namespaces"
 alias kcgp="kubectl get pods"
 alias kcgs="kubectl get svc"
+alias kcx="kubectx"
+alias kns="kubens"
 
 # yarn
 alias y="yarn"
