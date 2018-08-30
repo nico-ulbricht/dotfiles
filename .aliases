@@ -12,6 +12,9 @@ alias where="which"
 
 # git
 alias g="git"
+alias gcm="git commit -am"
+alias gp="git pull"
+alias gpu="git push"
 alias master="git checkout master"
 
 # k8s  
