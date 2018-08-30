@@ -19,6 +19,8 @@ alias master="git checkout master"
 
 # k8s  
 alias kc="kubectl"
+alias kcc="kubectl create"
+alias kccn="kubectl create namespace"
 alias kcd="kubectl delete"
 alias kcdd="kubectl delete deploy"
 alias kcdn="kubectl delete namespace"
