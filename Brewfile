@@ -6,6 +6,7 @@ tap 'homebrew/cask-versions'
 
 brew 'ack'
 brew 'coreutils'
+brew 'dep'
 brew 'go'
 brew 'kubectx'
 brew 'kubernetes-cli'
