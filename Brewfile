@@ -16,6 +16,7 @@ brew 'node'
 brew 'python'
 brew 'terraform'
 brew 'tree'
+brew 'wget'
 brew 'yarn'
 brew 'zsh'
 
