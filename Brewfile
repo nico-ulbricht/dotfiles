@@ -11,6 +11,7 @@ brew 'go'
 brew 'kubectx'
 brew 'kubernetes-cli'
 brew 'kubernetes-helm'
+brew 'mas'
 brew 'mongodb'
 brew 'node'
 brew 'python'
@@ -34,3 +35,6 @@ cask 'iterm2'
 cask 'slack'
 cask 'spotify'
 cask 'visual-studio-code'
+
+mas 'Day One',          id: 1055511498
+mas 'GIPHY CAPTURE',    id: 668208984
