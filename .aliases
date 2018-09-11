@@ -12,8 +12,10 @@ alias where="which"
 
 # git
 alias g="git"
+alias gb="git branch"
 alias gcm="git commit -am"
 alias gco="git checkout"
+alias gf="git fetch"
 alias gm="git merge"
 alias gmm="git merge master"
 alias gp="git pull"
