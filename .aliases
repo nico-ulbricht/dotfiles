@@ -8,7 +8,6 @@ alias .....="cd ../../../.."
 alias cp="cp -v"
 alias mv="mv -v"
 alias rm="rm -v"
-alias rmf="rm"
 alias where="which"
 
 # git
