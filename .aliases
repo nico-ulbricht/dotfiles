@@ -48,6 +48,7 @@ alias kcgn="kubectl get namespaces"
 alias kcgp="kubectl get pods"
 alias kcgs="kubectl get svc"
 alias kcns="kubens"
+alias kcpf="kubectl port-forward"
 alias kcx="kubectx"
 
 # yarn
