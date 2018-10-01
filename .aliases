@@ -51,6 +51,9 @@ alias kcns="kubens"
 alias kcpf="kubectl port-forward"
 alias kcx="kubectx"
 
+# docker
+alias dkl="docker kill $(docker ps -lq)"
+
 # yarn
 alias y="yarn"
 alias yb="yarn build"
