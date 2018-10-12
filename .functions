@@ -14,3 +14,21 @@ function kp() {
 function mkd() {
 	mkdir -p $@ && cd $@
 }
+
+# Cleans GCR image before a given date
+# Usage: cleanGcr gcr.io/my-project/my-registry 2018-01-01
+# Taken from https://gist.github.com/ahmetb/7ce6d741bd5baa194a3fac6b1fec8bb7
+function cleanGcr() {
+    local C=0
+    IMAGE="${1}"
+    DATE="${2}"
+    for digest in $(gcloud container images list-tags ${IMAGE} --limit=999999 --sort-by=TIMESTAMP \
+    --filter="NOT tags:latest AND timestamp.datetime < '${DATE}'" --format='get(digest)'); do
+    (
+        set -x
+        gcloud container images delete -q --force-delete-tags "${IMAGE}@${digest}"
+    )
+    let C=C+1
+    done
+    echo "Deleted ${C} images in ${IMAGE}." >&2
+}
