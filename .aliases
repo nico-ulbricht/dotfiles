@@ -52,7 +52,13 @@ alias kcpf="kubectl port-forward"
 alias kcx="kubectx"
 
 # docker
-alias dkl="docker kill $(docker ps -lq)"
+alias d="docker"
+alias db="docker build"
+alias de="docker exec"
+alias di="docker images"
+alias dk="docker kill"
+alias dps="docker ps"
+alias dr="docker run"
 
 # yarn
 alias y="yarn"

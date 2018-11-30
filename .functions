@@ -32,3 +32,7 @@ function cleanGcr() {
     done
     echo "Deleted ${C} images in ${IMAGE}." >&2
 }
+
+function dkl() {
+    docker kill $(docker ps -ql)
+}
