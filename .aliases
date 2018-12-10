@@ -73,3 +73,10 @@ alias ybw="yarn build:watch"
 alias ys="yarn start"
 alias yt="yarn test"
 alias ytw="yarn test:watch"
+
+# shipyard
+alias ss="shipyard sandbox"
+alias ssc="shipyard sandbox create"
+alias ssd="shipyard sandbox delete"
+alias ssl="shipyard sandbox list"
+alias ssu="shipyard sandbox update"
