@@ -36,3 +36,7 @@ function cleanGcr() {
 function dkl() {
     docker kill $(docker ps -ql)
 }
+
+function killDeadPods() {
+    kubectl get pods -n kube-system| grep Evicted | awk '{print $1}' | xargs kubectl delete pod
+}
