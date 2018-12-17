@@ -77,7 +77,7 @@ alias ytw="yarn test:watch"
 # shipyard
 alias ss="shipyard sandbox"
 alias ssc="shipyard sandbox create"
-alias ssd="shipyard sandbox delete"
 alias ssg="shipyard sandbox get"
+alias ssk="shipyard sandbox delete"
 alias ssl="shipyard sandbox list"
 alias ssu="shipyard sandbox update"
