@@ -37,6 +37,10 @@ function dkl() {
     docker kill $(docker ps -ql)
 }
 
-function killDeadPods() {
-    kubectl get pods -n kube-system| grep Evicted | awk '{print $1}' | xargs kubectl delete pod
+function kdp() {
+    kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod
+}
+
+function gkp() {
+    kubectl get pods | grep $@ | awk '{print $1}' | xargs kubectl delete pods
 }
