@@ -6,6 +6,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
 
 brew 'ack'
+brew 'cloc'
 brew 'coreutils'
 brew 'dep'
 brew 'go'
