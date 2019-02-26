@@ -44,3 +44,11 @@ function kdp() {
 function gkp() {
     kubectl get pods | grep $@ | awk '{print $1}' | xargs kubectl delete pods
 }
+
+function ci() {
+    open https://circleci.com/gh/freight-hub/workflows/$(basename $PWD) 
+}
+
+function gh() {
+    open https://github.com.com/freight-hub/$(basename $PWD) 
+}
