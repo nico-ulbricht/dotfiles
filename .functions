@@ -45,6 +45,10 @@ function gkp() {
     kubectl get pods | grep $@ | awk '{print $1}' | xargs kubectl delete pods
 }
 
+function gkj() {
+    kubectl get jobs | grep $@ | awk '{print $1}' | xargs kubectl delete jobs
+}
+
 function ci() {
     open https://circleci.com/gh/freight-hub/workflows/$(basename $PWD) 
 }
