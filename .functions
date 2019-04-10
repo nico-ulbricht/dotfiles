@@ -54,7 +54,7 @@ function ci() {
 }
 
 function gh() {
-    open https://github.com.com/freight-hub/$(basename $PWD) 
+    open https://github.com/freight-hub/$(basename $PWD) 
 }
 
 function wi() {
