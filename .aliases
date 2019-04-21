@@ -73,6 +73,8 @@ alias dk="docker kill"
 alias dp="docker pull"
 alias dps="docker ps"
 alias dr="docker run"
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
 
 # yarn
 alias y="yarn"
