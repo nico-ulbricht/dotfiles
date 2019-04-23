@@ -72,7 +72,6 @@
       "Bound Hosts" : [
     
       ],
-      "Working Directory" : "\/Users\/wahtye",
       "Blinking Cursor" : true,
       "Disable Window Resizing" : true,
       "Sync Title" : false,
@@ -158,7 +157,7 @@
         "Red Component" : 0.87591359999999996,
         "Blue Component" : 0.99703969999999997
       },
-      "Name" : "DarkProfile",
+      "Name" : "NicosProfile",
       "Cursor Text Color" : {
         "Green Component" : 1,
         "Red Component" : 1,
