@@ -1,21 +1,24 @@
 #!/usr/bin/env bash
 
+folder=$(cd "$(dirname "$0")" ; pwd -P)
+
 # ################################
 # Installing Dependencies
 # ################################
-echo "Setting up Dependencies..."
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew bundle
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# echo "Setting up Dependencies..."
+# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# brew bundle
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # ################################
 # Linking dotfiles
 # ################################
 echo "Setting up Dotfiles"
-ln -s .aliases ~/
-ln -s .functions ~/
-ln -s .keybindings ~/
-ln -s .zshrc ~/
+ln -s $folder/.aliases ~/.aliases
+ln -s $folder/.functions ~/.functions
+ln -s $folder/.keybindings ~/.keybindings
+ln -s $folder/.zshrc ~/.zshrc
+exit 0
 
 # ################################
 # Visual Studio Code
