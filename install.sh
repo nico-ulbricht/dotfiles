@@ -14,6 +14,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo "Setting up Dotfiles"
 ln -s .aliases ~/
 ln -s .functions ~/
+ln -s .keybindings ~/
 ln -s .zshrc ~/
 
 # ################################
