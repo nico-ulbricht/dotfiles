@@ -1,3 +1,6 @@
+echo "Setting up VSCode..."
+ln -s "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/code
+
 declare -a vsCodeExtensions=(
     "eamodio.gitlens"
     "esbenp.prettier-vscode"
