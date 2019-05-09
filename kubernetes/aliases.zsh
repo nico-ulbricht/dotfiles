@@ -1,29 +1,3 @@
-# navigation
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-
-# system
-alias cp="cp -v"
-alias mv="mv -v"
-alias rm="rm -v"
-alias where="which"
-alias chmox="chmod +x"
-
-# git
-alias g="git"
-alias gb="git branch"
-alias gcm="git commit -am"
-alias gco="git checkout"
-alias gf="git fetch"
-alias gm="git merge"
-alias gmm="git merge master"
-alias gp="git pull"
-alias gps="git push"
-alias master="git checkout master"
-
-# k8s  
 alias k="kubectl"
 alias ka="kubectl apply"
 alias kc="kubectl create"
@@ -63,31 +37,3 @@ alias kl="kubectl logs"
 alias kns="kubens"
 alias kpf="kubectl port-forward"
 alias kx="kubectx"
-
-# docker
-alias d="docker"
-alias db="docker build"
-alias de="docker exec"
-alias di="docker images"
-alias dk="docker kill"
-alias dp="docker pull"
-alias dps="docker ps"
-alias dr="docker run"
-alias dcu="docker-compose up"
-alias dcd="docker-compose down"
-
-# yarn
-alias y="yarn"
-alias yb="yarn build"
-alias ybw="yarn build:watch"
-alias ys="yarn start"
-alias yt="yarn test"
-alias ytw="yarn test:watch"
-
-# shipyard
-alias ss="shipyard sandbox"
-alias ssc="shipyard sandbox create"
-alias ssg="shipyard sandbox get"
-alias ssk="shipyard sandbox delete"
-alias ssl="shipyard sandbox list"
-alias ssu="shipyard sandbox update"

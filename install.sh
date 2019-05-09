@@ -7,16 +7,13 @@ folder=$(cd "$(dirname "$0")" ; pwd -P)
 # ################################
 echo "Setting up Dependencies..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew bundle
+(cd brew && brew bundle)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # ################################
 # Linking dotfiles
 # ################################
 echo "Setting up Dotfiles"
-ln -s $folder/.aliases ~/.aliases
-ln -s $folder/.functions ~/.functions
-ln -s $folder/.keybindings ~/.keybindings
 ln -s $folder/.zshrc ~/.zshrc
 exit 0
 
@@ -25,24 +22,23 @@ exit 0
 # ################################
 echo "Setting up VSCode..."
 ln -s "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/code
-./configuration/install-vscode-extensions.sh
+./vscode/postinstall.sh
 
 # ################################
 # ITerm 2
 # ################################
 echo "Setting up ITerm 2..."
-open "./configuration/iterm-colors.itermcolors"
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 defaults write com.googlecode.iterm2 HideTab -bool true
 defaults read -app iTerm > /dev/null 2>&1;
-ln -s $folder/configuration/iterm2-profile.json ~/Library/Application\ Support/iTerm2/DynamicProfiles
+ln -s $folder/zsh/profile.json ~/Library/Application\ Support/iTerm2/DynamicProfiles
 
 # ################################
 # Spyware & Ads
 # ################################
 echo "Setting up Hostfile..."
 sudo cp /etc/hosts /etc/hosts.backup
-sudo cp ./configs/hosts /etc/hosts
+sudo cp ./system/hosts /etc/hosts
 
 # ################################
 # Setup OSX Specifics
