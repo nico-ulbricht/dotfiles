@@ -1,4 +1,6 @@
+# ENV
 export LANG=en_US.UTF-8
+export PATH="$PATH:$HOME/go/bin"
 
 # zsh Theme
 export ZSH=/Users/$(whoami)/.oh-my-zsh
