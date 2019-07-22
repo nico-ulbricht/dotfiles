@@ -1,4 +1,5 @@
 alias g="git"
+alias ga="git add ."
 alias gb="git branch"
 alias gcm="git commit -am"
 alias gco="git checkout"
