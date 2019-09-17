@@ -2,3 +2,7 @@
 function mkd() {
 	mkdir -p $@ && cd $@
 }
+
+function b64d() {
+	echo -n $@ | base64 -D
+}
