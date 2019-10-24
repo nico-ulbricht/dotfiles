@@ -6,6 +6,7 @@ call vundle#begin()
 
 Plugin 'AlessandroYorba/Alduin'
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'fatih/vim-go'
 Plugin 'itchyny/lightline.vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
