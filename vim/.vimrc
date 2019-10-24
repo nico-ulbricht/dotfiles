@@ -1,17 +1,22 @@
-" plugins
+" vundle
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+Plugin 'AlessandroYorba/Alduin'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'terryma/vim-multiple-cursors'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdtree'
-
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 filetype plugin indent on
 
+" color
+colorscheme alduin
 
 " editor configuration
 syntax on
