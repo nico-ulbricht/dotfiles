@@ -1,3 +1,4 @@
+export KEYTIMEOUT=1
 export ZSH=/Users/$(whoami)/.oh-my-zsh
 export ZSH_THEME="robbyrussell"
 
