@@ -47,6 +47,7 @@ let g:go_addtags_transform = "snakecase"
 let g:go_auto_type_info = 1
 let g:go_fmt_command = "goimports"
 let g:lightline = { 'colorscheme': 'seoul256' }
+let NERDTreeShowHidden=1
 
 " key mappings
 map <C-o> :NERDTreeToggle<CR>
