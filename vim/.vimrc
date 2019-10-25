@@ -11,6 +11,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'jparise/vim-graphql'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'junegunn/seoul256.vim'
 Plugin 'lifepillar/pgsql.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
@@ -20,7 +21,7 @@ call vundle#end()
 filetype plugin indent on
 
 " color
-colorscheme alduin
+colo seoul256
 
 " editor configuration
 syntax on
