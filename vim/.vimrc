@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'AlessandroYorba/Alduin'
+Plugin 'ajh17/VimCompletesMe'
 Plugin 'fatih/vim-go'
 Plugin 'itchyny/lightline.vim'
 Plugin 'jparise/vim-graphql'
@@ -14,8 +14,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'lifepillar/pgsql.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 filetype plugin indent on
@@ -42,6 +41,12 @@ set tabstop=2
 set title
 set undodir=~/.vim/undo//
 
+" plugin configurations
 let &titlestring = @%
+let g:go_addtags_transform = "snakecase"
+let g:go_auto_type_info = 1
+let g:go_fmt_command = "goimports"
 let g:lightline = { 'colorscheme': 'seoul256' }
-let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']
+
+" key mappings
+map <C-o> :NERDTreeToggle<CR>
