@@ -59,15 +59,35 @@ set splitright
 """""""""""""""""""""""
 " plugin configurations
 let &titlestring = @%
+
+" deoplete
 let g:deoplete#enable_at_startup = 1
+
+" vim-go
 let g:go_addtags_transform = "snakecase"
 let g:go_auto_type_info = 1
 let g:go_fmt_command = "goimports"
-let g:lightline = { 'colorscheme': 'seoul256' }
+
+" lightline
+let g:lightline = { "colorscheme": "seoul256" }
+
+" NERDTree
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeDirArrows = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden = 1
+
+" ale
+let g:ale_fix_on_save = 1
+let g:ale_lint_on_text_changed = "always"
+let g:ale_lint_delay = 1000
+let g:ale_fixers = {"*": ["remove_trailing_lines", "trim_whitespace"]}
+
+" ctrp
+" allow vim navigation in selections
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+
 
 """"""""""""""
 " key mappings
@@ -77,8 +97,6 @@ map <C-o> :NERDTreeToggle<CR>
 nnoremap <Leader><Leader> <C-^>
 
 " disable arrow keys
-inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 nnoremap <Left> :echoe "No no no, use h!"<CR>
 nnoremap <Right> :echoe "No no no, use l!"<CR>
 nnoremap <Up> :echoe "No no no, use k!"<CR>
