@@ -1,25 +1,19 @@
-" vundle
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" plugins
+call plug#begin()
+Plug 'VundleVim/Vundle.vim'
+Plug 'ajh17/VimCompletesMe'
+Plug 'itchyny/lightline.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'w0rp/ale'
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'ajh17/VimCompletesMe'
-Plugin 'itchyny/lightline.vim'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'junegunn/seoul256.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'w0rp/ale'
-
-Plugin 'fatih/vim-go'
-Plugin 'hashivim/vim-terraform'
-Plugin 'jparise/vim-graphql'
-Plugin 'lifepillar/pgsql.vim'
-
-call vundle#end()
-filetype plugin indent on
+Plug 'fatih/vim-go'
+Plug 'hashivim/vim-terraform'
+Plug 'jparise/vim-graphql'
+Plug 'lifepillar/pgsql.vim'
+call plug#end()
 
 " color
 colo seoul256
@@ -65,4 +59,3 @@ let NERDTreeShowHidden = 1
 
 
 map <C-o> :NERDTreeToggle<CR>
-
