@@ -1,3 +1,4 @@
-git config --global gpg.program gpg
-git config --global commit.gpgsign true
 gpg -K --keyid-format SHORT
+
+folder=$(cd "$(dirname "$0")" ; pwd -P)
+ln $folder/.gitconfig ~/.gitconfig

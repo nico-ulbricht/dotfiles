@@ -1,13 +1,11 @@
 """""""""
 " plugins
 call plug#begin()
-Plug 'VundleVim/Vundle.vim'
-Plug 'ajh17/VimCompletesMe'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'w0rp/ale'
 
 Plug 'fatih/vim-go'
@@ -61,6 +59,7 @@ set splitright
 """""""""""""""""""""""
 " plugin configurations
 let &titlestring = @%
+let g:deoplete#enable_at_startup = 1
 let g:go_addtags_transform = "snakecase"
 let g:go_auto_type_info = 1
 let g:go_fmt_command = "goimports"
@@ -78,6 +77,8 @@ map <C-o> :NERDTreeToggle<CR>
 nnoremap <Leader><Leader> <C-^>
 
 " disable arrow keys
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 nnoremap <Left> :echoe "No no no, use h!"<CR>
 nnoremap <Right> :echoe "No no no, use l!"<CR>
 nnoremap <Up> :echoe "No no no, use k!"<CR>
