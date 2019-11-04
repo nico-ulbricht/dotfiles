@@ -1,8 +1,10 @@
 """""""""
 " plugins
 call plug#begin()
+Plug 'ayu-theme/ayu-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -12,9 +14,12 @@ Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
 Plug 'jparise/vim-graphql'
 Plug 'lifepillar/pgsql.vim'
+Plug 'sebdah/vim-delve'
 call plug#end()
 
 " color
+set termguicolors
+let g:seoul256_background = 235
 colo seoul256
 
 """"""""""""""""""""""
@@ -67,6 +72,10 @@ let g:deoplete#enable_at_startup = 1
 let g:go_addtags_transform = "snakecase"
 let g:go_auto_type_info = 1
 let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 0
 
 " lightline
 let g:lightline = { "colorscheme": "seoul256" }
@@ -87,7 +96,12 @@ let g:ale_fixers = {"*": ["remove_trailing_lines", "trim_whitespace"]}
 " allow vim navigation in selections
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
 
+" vim-terraform
+let g:terraform_align = 1
+let g:terraform_fmt_on_save = 1
 
 """"""""""""""
 " key mappings

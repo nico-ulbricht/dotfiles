@@ -30,3 +30,7 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Bluetooth Headphone Quality
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+
+# Setting up Key Repeats
+defaults write -g InitialKeyRepeat -int 1
+defaults write -g KeyRepeat -int 1
