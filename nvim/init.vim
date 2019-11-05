@@ -9,6 +9,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'w0rp/ale'
+Plug 'yuttie/comfortable-motion.vim'
 
 Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
@@ -45,6 +46,7 @@ set colorcolumn=+1
 " line numbers
 set number
 set numberwidth=5
+set relativenumber
 
 " indentation
 set autoindent
