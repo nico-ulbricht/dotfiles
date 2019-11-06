@@ -5,11 +5,13 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/seoul256.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'w0rp/ale'
 Plug 'yuttie/comfortable-motion.vim'
+
+Plug 'jacoborus/tender.vim'
+Plug 'junegunn/seoul256.vim'
 
 Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
@@ -20,8 +22,8 @@ call plug#end()
 
 " color
 set termguicolors
-let g:seoul256_background = 235
-colo seoul256
+colorscheme seoul256
+let g:lightline = { 'colorscheme': 'seoul256' }
 
 """"""""""""""""""""""
 " editor configuration
@@ -78,9 +80,6 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 0
-
-" lightline
-let g:lightline = { "colorscheme": "seoul256" }
 
 " NERDTree
 let NERDTreeAutoDeleteBuffer = 1

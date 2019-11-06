@@ -16,26 +16,5 @@ bindkey '^w' backward-kill-word
 zmodload zsh/zle
 autoload -U colors && colors
 
-# Callback for vim mode change
-function zle-line-init zle-keymap-select () {
-    # Only supported in these terminals
-    if [ "$TERM" = "xterm-256color" ] || [ "$TERM" = "xterm-kitty" ] || [ "$TERM" = "screen-256color" ]; then
-        if [ $KEYMAP = vicmd ]; then
-            # Command mode
-            export RPROMPT="%{$fg[green]%}[NORMAL]%{$reset_color%}"
-        else
-            # Insert mode
-            export RPROMPT="%{$fg[blue]%}[INSERT]%{$reset_color%}"
-        fi
-    fi
-
-    RPS1="${${KEYMAP/vicmd/$RPROMPT}/(main|viins)/$RPROMPT} $EPS1"
-    zle reset-prompt
-}
-
-# Bind the callback
-zle -N zle-line-init
-zle -N zle-keymap-select
-
 # Reduce latency when pressing <Esc>
 export KEYTIMEOUT=1
