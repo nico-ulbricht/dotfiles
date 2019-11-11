@@ -7,23 +7,31 @@ Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'tpope/vim-sensible'
 Plug 'w0rp/ale'
 Plug 'yuttie/comfortable-motion.vim'
 
+Plug 'arcticicestudio/nord-vim'
 Plug 'jacoborus/tender.vim'
 Plug 'junegunn/seoul256.vim'
 
 Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
 Plug 'jparise/vim-graphql'
+Plug 'leafgarland/typescript-vim'
 Plug 'lifepillar/pgsql.vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'sebdah/vim-delve'
 call plug#end()
 
-" color
+" color theme
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
-colorscheme seoul256
-let g:lightline = { 'colorscheme': 'seoul256' }
+
+colorscheme nord
+let g:lightline = { 'colorscheme': 'nord' }
+let g:nord_cursor_line_number_background = 1
 
 """"""""""""""""""""""
 " editor configuration
