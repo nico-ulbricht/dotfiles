@@ -34,3 +34,9 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # Setting up Key Repeats
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 1
+
+# font smoothing
+defaults write co.zeit.hyper CGFontRenderingFontSmoothingDisabled 0
+defaults write co.zeit.hyper.helper CGFontRenderingFontSmoothingDisabled 0
+defaults write co.zeit.hyper.helper.EH CGFontRenderingFontSmoothingDisabled 0
+defaults write co.zeit.hyper.helper.NP CGFontRenderingFontSmoothingDisabled 0
