@@ -3,5 +3,3 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 folder=$(cd "$(dirname "$0")" ; pwd -P)
 ln -s $folder/.tmux.conf ~/.tmux.conf
-ln -s $folder/battery.sh ~/.tmux/battery.sh
-ln -s $folder/cpu.sh ~/.tmux/cpu.sh
