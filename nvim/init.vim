@@ -2,6 +2,7 @@
 " plugins
 call plug#begin()
 Plug 'ayu-theme/ayu-vim'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
