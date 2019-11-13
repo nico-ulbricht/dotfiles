@@ -1,7 +1,7 @@
 """""""""
 " plugins
 call plug#begin()
-Plug 'ayu-theme/ayu-vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
@@ -9,12 +9,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 Plug 'yuttie/comfortable-motion.vim'
-
-Plug 'arcticicestudio/nord-vim'
-Plug 'jacoborus/tender.vim'
-Plug 'junegunn/seoul256.vim'
 
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-go'
@@ -23,7 +20,6 @@ Plug 'jparise/vim-graphql'
 Plug 'leafgarland/typescript-vim'
 Plug 'lifepillar/pgsql.vim'
 Plug 'peitalin/vim-jsx-typescript'
-Plug 'sebdah/vim-delve'
 call plug#end()
 
 " color theme
