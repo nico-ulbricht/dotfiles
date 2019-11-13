@@ -16,6 +16,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'jacoborus/tender.vim'
 Plug 'junegunn/seoul256.vim'
 
+Plug 'cespare/vim-toml'
 Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
 Plug 'jparise/vim-graphql'
