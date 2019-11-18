@@ -149,7 +149,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'git-falcon9',
+    'hyperterm-paste',
     'nord-hyper',
   ],
 
