@@ -1,3 +1,4 @@
+# -- docker -------------------------
 alias d="docker"
 alias db="docker build"
 alias de="docker exec"
@@ -6,5 +7,7 @@ alias dk="docker kill"
 alias dp="docker pull"
 alias dps="docker ps"
 alias dr="docker run"
-alias dcu="docker-compose up"
+
+# -- docker-compose -----------------
+alias dcu="docker-compose up -d"
 alias dcd="docker-compose down"

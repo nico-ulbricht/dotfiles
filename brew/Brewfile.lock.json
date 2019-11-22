@@ -704,6 +704,14 @@
             "appdir": "/Applications"
           }
         }
+      },
+      "karabiner-elements": {
+        "version": "12.7.0",
+        "options": {
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
       }
     }
   },
