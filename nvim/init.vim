@@ -39,6 +39,7 @@ filetype plugin indent on
 
 set autoread
 set backspace=indent,eol,start
+set encoding=utf-8
 set hlsearch
 set laststatus=2
 set nobackup

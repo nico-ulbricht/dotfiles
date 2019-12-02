@@ -1,6 +1,7 @@
 # -- docker -------------------------
 alias d="docker"
 alias db="docker build"
+alias dcl="docker system prune --volumes --force"
 alias de="docker exec"
 alias di="docker images"
 alias dk="docker kill"
