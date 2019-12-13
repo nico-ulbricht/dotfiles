@@ -1,3 +1,9 @@
+echo "Setting up Aerial Screensaver..."
+AERIAL_DST="~/Downloads/aerial.zip"
+curl --silent https://github.com/JohnCoates/Aerial/releases/download/v1.6.4/Aerial.saver.zip -o $AERIAL_DST
+unzip $AERIAL_DST
+exit 0
+
 echo "Setting up OSX Sharing..."
 sudo systemsetup -setwakeonnetworkaccess off
 echo yes | sudo systemsetup -setremotelogin off

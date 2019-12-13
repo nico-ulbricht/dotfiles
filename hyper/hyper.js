@@ -67,7 +67,7 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '10px',
+    padding: '0 10px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -140,6 +140,9 @@ module.exports = {
     webGLRenderer: false,
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    hyperSpotify: {
+      margin: '5px',
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -150,6 +153,7 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyperterm-paste',
+    'hyper-spotify',
     'nord-hyper',
   ],
 
