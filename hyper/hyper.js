@@ -141,7 +141,7 @@ module.exports = {
 
     // for advanced config flags please refer to https://hyper.is/#cfg
     hyperSpotify: {
-      margin: '5px',
+      margin: 'default',
     }
   },
 

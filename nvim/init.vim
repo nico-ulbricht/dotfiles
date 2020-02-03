@@ -7,14 +7,12 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
-Plug 'yuttie/comfortable-motion.vim'
 
 Plug 'cespare/vim-toml'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'hashivim/vim-terraform'
 Plug 'jparise/vim-graphql'
 Plug 'leafgarland/typescript-vim'
@@ -81,11 +79,14 @@ let g:deoplete#enable_at_startup = 1
 " vim-go
 let g:go_addtags_transform = "snakecase"
 let g:go_auto_type_info = 1
+let g:go_debug = ['shell-commands']
+let g:go_def_mod = 'godef'
 let g:go_fmt_command = "goimports"
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 0
+nnoremap gt :GoDefPop<cr>
 
 " NERDTree
 let NERDTreeAutoDeleteBuffer = 1
