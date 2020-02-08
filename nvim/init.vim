@@ -1,7 +1,6 @@
 """""""""
 " plugins
 call plug#begin()
-Plug 'arcticicestudio/nord-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
@@ -12,6 +11,8 @@ Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
+
+Plug 'altercation/vim-colors-solarized'
 
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -25,12 +26,12 @@ call plug#end()
 " color theme
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-" set termguicolors
+set termguicolors
 
 
-colorscheme nord
-let g:lightline = { 'colorscheme': 'nord' }
-let g:nord_cursor_line_number_background = 1
+colorscheme solarized
+let g:lightline = { 'colorscheme': 'solarized' }
+set background=light
 
 """"""""""""""""""""""
 " editor configuration
@@ -81,7 +82,6 @@ let g:deoplete#enable_at_startup = 1
 " vim-go
 let g:go_addtags_transform = "snakecase"
 let g:go_auto_type_info = 1
-let g:go_debug = ['shell-commands']
 let g:go_def_mod = 'godef'
 let g:go_fmt_command = "goimports"
 let g:go_highlight_functions = 1
