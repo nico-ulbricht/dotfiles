@@ -154,7 +154,7 @@ module.exports = {
   plugins: [
     'hyperterm-paste',
     'hyper-spotify',
-    'hyper-solarized-light',
+    'hyper-gruvbox',
   ],
 
   // in development, you can create a directory under

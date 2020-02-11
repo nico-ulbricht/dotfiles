@@ -12,7 +12,8 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 
-Plug 'altercation/vim-colors-solarized'
+Plug 'morhetz/gruvbox'
+Plug 'shinchu/lightline-gruvbox.vim'
 
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -29,9 +30,10 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 
 
-colorscheme solarized
-let g:lightline = { 'colorscheme': 'solarized' }
-set background=light
+colorscheme gruvbox
+set background=dark
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
 
 """"""""""""""""""""""
 " editor configuration
@@ -114,6 +116,16 @@ inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
 " vim-terraform
 let g:terraform_align = 1
 let g:terraform_fmt_on_save = 1
+
+" vim-tsx
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
+hi tsxTagName guifg=#0288D1
+hi tsxCloseString guifg=#0288D1
+hi tsxCloseTag guifg=#0288D1
+hi tsxCloseTagName guifg=#0288D1
+hi tsxAttributeBraces guifg=#0288D1
+hi tsxEqual guifg=#03A9F4
+hi tsxAttrib guifg=#03A9F4 cterm=italic
 
 """"""""""""""
 " key mappings
