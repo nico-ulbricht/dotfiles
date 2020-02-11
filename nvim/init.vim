@@ -119,13 +119,13 @@ let g:terraform_fmt_on_save = 1
 
 " vim-tsx
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
-hi tsxTagName guifg=#0288D1
-hi tsxCloseString guifg=#0288D1
-hi tsxCloseTag guifg=#0288D1
-hi tsxCloseTagName guifg=#0288D1
-hi tsxAttributeBraces guifg=#0288D1
-hi tsxEqual guifg=#03A9F4
-hi tsxAttrib guifg=#03A9F4 cterm=italic
+hi tsxTagName guifg=#FB4934
+hi tsxCloseString guifg=#FB4934
+hi tsxCloseTag guifg=#FB4934
+hi tsxCloseTagName guifg=#FB4934
+hi tsxAttributeBraces guifg=#FB4934
+hi tsxEqual guifg=#FABD2F
+hi tsxAttrib guifg=#FABD2F cterm=italic
 
 """"""""""""""
 " key mappings
