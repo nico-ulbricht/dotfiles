@@ -145,7 +145,7 @@ module.exports = {
     },
 
     gruvboxTheme: {
-      style: 'light',
+      style: 'dark',
     },
   },
 
