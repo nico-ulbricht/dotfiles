@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 13,
 
     // font family with optional fallbacks
-    fontFamily: '"Source Code Pro", monospace',
+    fontFamily: '"Hasklig", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -156,9 +156,10 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyperterm-paste',
-    'hyper-spotify',
+    'hyper-font-ligatures',
     'hyper-gruvbox',
+    'hyper-spotify',
+    'hyperterm-paste',
   ],
 
   // in development, you can create a directory under

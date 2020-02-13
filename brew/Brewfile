@@ -45,5 +45,6 @@ cask 'spotify'
 
 cask 'font-fira-code'
 cask 'font-hack'
+cask 'font-hasklig'
 cask 'font-roboto-mono'
 cask 'font-source-code-pro'

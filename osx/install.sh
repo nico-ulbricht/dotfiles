@@ -41,8 +41,13 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 1
 
-# font smoothing
+# font smoothing for hyper
 defaults write co.zeit.hyper CGFontRenderingFontSmoothingDisabled 0
 defaults write co.zeit.hyper.helper CGFontRenderingFontSmoothingDisabled 0
 defaults write co.zeit.hyper.helper.EH CGFontRenderingFontSmoothingDisabled 0
 defaults write co.zeit.hyper.helper.NP CGFontRenderingFontSmoothingDisabled 0
+
+# disable siri
+defaults write com.apple.Siri StatusMenuVisible -bool false
+defaults write com.apple.Siri UserHasDeclinedEnable -bool true
+defaults write com.apple.assistant.support 'Assistant Enabled' 0
