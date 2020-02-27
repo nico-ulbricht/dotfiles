@@ -6,3 +6,7 @@ function mkd() {
 function b64d() {
 	echo -n $@ | base64 -D
 }
+
+function b64pb() {
+	echo -n $@ | base64 -D | pbcopy
+}
