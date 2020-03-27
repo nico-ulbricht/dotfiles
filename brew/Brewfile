@@ -29,6 +29,7 @@ brew 'terraform'
 brew 'the_silver_searcher'
 brew 'tmux'
 brew 'tree'
+brew 'typescript'
 brew 'watchman'
 brew 'zsh'
 
