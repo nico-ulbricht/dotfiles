@@ -12,3 +12,6 @@ alias dr="docker run"
 # -- docker-compose -----------------
 alias dcu="docker-compose up -d"
 alias dcd="docker-compose down"
+
+# -- docker images -----------------
+alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan:1.10.0'

@@ -18,6 +18,7 @@ Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'hashivim/vim-terraform'
+Plug 'jacqueswww/vim-vyper'
 Plug 'jparise/vim-graphql'
 Plug 'leafgarland/typescript-vim'
 Plug 'lifepillar/pgsql.vim'
