@@ -10,6 +10,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 
+Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 
@@ -30,7 +31,7 @@ set termguicolors
 
 
 set background=light
-colorscheme gruvbox
+colorscheme nord
 let g:lightline = {}
 let g:lightline.colorscheme = 'gruvbox'
 
