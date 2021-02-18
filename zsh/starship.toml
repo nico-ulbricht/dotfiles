@@ -3,6 +3,9 @@ add_newline = false
 [golang]
 symbol = ""
 
+[gcloud]
+disabled = true
+
 [kubernetes]
 disabled = true
 
