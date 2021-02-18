@@ -22,6 +22,7 @@ Plug 'jparise/vim-graphql'
 Plug 'leafgarland/typescript-vim'
 Plug 'lifepillar/pgsql.vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'udalov/kotlin-vim'
 call plug#end()
 
 " color theme
