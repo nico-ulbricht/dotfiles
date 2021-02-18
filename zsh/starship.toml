@@ -3,6 +3,12 @@ add_newline = false
 [golang]
 symbol = ""
 
+[java]
+disabled = true
+
+[kotlin]
+format = ""
+
 [gcloud]
 disabled = true
 
