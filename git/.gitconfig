@@ -4,3 +4,13 @@
 	signingkey = 78661836210669CD
 [alias]
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[transfer]
+  fsckobjects = true
+[fetch]
+  fsckobjects = true
+[receive]
+  fsckObjects = true
+[push]
+  default = current
+[core]
+  ignoreCase = false
