@@ -47,3 +47,4 @@ let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden = 1
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
+map <C-o> :NERDTreeToggle<CR>
