@@ -11,3 +11,6 @@ alias mv="mv -v"
 alias rm="rm -v"
 alias where="which"
 alias chmox="chmod +x"
+
+alias ls="ls -GFh"
+alias lsa="ls -aGFh"

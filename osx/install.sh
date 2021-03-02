@@ -1,8 +1,7 @@
 echo "Setting up Aerial Screensaver..."
-AERIAL_DST="~/Downloads/aerial.zip"
-curl --silent https://github.com/JohnCoates/Aerial/releases/download/v1.6.4/Aerial.saver.zip -o $AERIAL_DST
-unzip $AERIAL_DST
-exit 0
+# AERIAL_DST="~/Downloads/aerial.zip"
+# curl https://github.com/JohnCoates/Aerial/releases/download/v1.6.4/Aerial.saver.zip -o $AERIAL_DST
+# unzip $AERIAL_DST
 
 echo "Setting up OSX Sharing..."
 sudo systemsetup -setwakeonnetworkaccess off
@@ -40,12 +39,6 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # Setting up Key Repeats
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 1
-
-# font smoothing for hyper
-defaults write co.zeit.hyper CGFontRenderingFontSmoothingDisabled 0
-defaults write co.zeit.hyper.helper CGFontRenderingFontSmoothingDisabled 0
-defaults write co.zeit.hyper.helper.EH CGFontRenderingFontSmoothingDisabled 0
-defaults write co.zeit.hyper.helper.NP CGFontRenderingFontSmoothingDisabled 0
 
 # disable siri
 defaults write com.apple.Siri StatusMenuVisible -bool false

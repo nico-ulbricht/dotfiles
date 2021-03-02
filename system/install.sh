@@ -4,6 +4,6 @@ sudo cp ./system/hosts /etc/hosts
 
 echo "Change HostName..."
 HOSTNAME="nico"
-sudo csutil --set ComputerName $HOSTNAME
-sudo csutil --set LocalHostName $HOSTNAME
-sudo csutil --set HostName $HOSTNAME
+sudo scutil --set ComputerName $HOSTNAME
+sudo scutil --set LocalHostName $HOSTNAME
+sudo scutil --set HostName $HOSTNAME
