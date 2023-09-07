@@ -11,9 +11,25 @@ format = ""
 
 [gcloud]
 disabled = true
+symbol = ""
 
 [kubernetes]
 disabled = true
 
 [line_break]
 disabled = true
+
+[aws]
+disabled = true
+
+[dotnet]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[git_branch]
+symbol = "ᛘ "
+
+[nodejs]
+symbol = "node "
