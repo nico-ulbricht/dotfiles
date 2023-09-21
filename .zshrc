@@ -1,3 +1,4 @@
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
 DIR="$HOME/projects/dotfiles"
