@@ -5,17 +5,12 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
-Plug 'w0rp/ale'
 
 Plug 'arcticicestudio/nord-vim'
-Plug 'morhetz/gruvbox'
-Plug 'shinchu/lightline-gruvbox.vim'
 
 Plug 'cespare/vim-toml'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'hashivim/vim-terraform'
 Plug 'jacqueswww/vim-vyper'
 Plug 'jparise/vim-graphql'
@@ -34,7 +29,6 @@ set termguicolors
 set background=light
 colorscheme nord
 let g:lightline = {}
-let g:lightline.colorscheme = 'gruvbox'
 
 """"""""""""""""""""""
 " editor configuration
