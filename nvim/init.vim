@@ -8,16 +8,12 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 
-Plug 'arcticicestudio/nord-vim'
+Plug 'rose-pine/vim'
 
 Plug 'cespare/vim-toml'
-Plug 'hashivim/vim-terraform'
-Plug 'jacqueswww/vim-vyper'
 Plug 'jparise/vim-graphql'
 Plug 'leafgarland/typescript-vim'
-Plug 'lifepillar/pgsql.vim'
 Plug 'peitalin/vim-jsx-typescript'
-Plug 'udalov/kotlin-vim'
 call plug#end()
 
 " color theme
@@ -26,8 +22,8 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 
 
-set background=light
-colorscheme nord
+set background=dark
+colorscheme rosepine_moon
 let g:lightline = {}
 
 """"""""""""""""""""""
